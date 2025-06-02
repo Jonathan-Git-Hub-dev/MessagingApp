@@ -1,0 +1,119 @@
+.userPageFrameFull{
+    min-height: 100svh;
+    max-height: 100svh;
+    min-width: 100svw;
+    max-width: 100svw;
+
+    background-color: aliceblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.userPageBanner {
+    min-height: 10svh;
+    max-height: 10svh;
+    min-width: 100svw;
+    max-width: 100svw;
+
+    background-color: lightskyblue;
+
+    box-sizing: border-box;
+    border: solid 2px cornflowerblue;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.userPageButton{
+    min-height: 5svh;
+    max-height: 5svh;
+
+    border-style: solid;
+    border-color: cornflowerblue;
+    border-radius: 4px;
+    background-color: aliceblue;
+    color: cornflowerblue
+}
+.userPageButton:hover{
+    background-color: lightskyblue;
+}
+#userPageLogout{
+    margin-right: auto;
+}
+.userPageFrame{
+    min-height: 90svh;
+    max-height: 90svh;
+    min-width: 100svw;
+    max-width: 100svw;
+    /*background-color: aquamarine;*/
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.userPageFriendsFrame{
+    min-height: 90svh;
+    max-height: 90svh;
+    min-width: 45svw;
+    max-width: 45svw;
+    /*flex-grow: 1;*/
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.userHeading{
+    color: cornflowerblue;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.userPageHolder{
+    background-color: aliceblue;
+    border: solid 1px cornflowerblue;
+    border-radius: 2px;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    max-height: 75svh;
+
+    min-width: 100%;
+    max-width: 100%;
+
+    overflow:scroll;
+}
+.userPageHolder::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.userPageLine{
+    color: lightskyblue;
+    height: 0px;
+}
+
+
+@media (max-width: 950px)
+{
+    .userPageFrame{/*requests stack under friends instead of beside*/
+        flex-direction: column;
+        align-items: center;
+    }
+    #userPageFriendsFrame1{/*make frames wider but shorted*/
+        min-height: 55svh;
+        max-height: 55svh;
+        min-width: 96svw;
+        max-width: 96svw;
+    }
+    #userPageFriendsFrame2{
+        min-height: 30svh;
+        max-height: 30svh;
+        min-width: 96svw;
+        max-width: 96svw;
+    }
+}

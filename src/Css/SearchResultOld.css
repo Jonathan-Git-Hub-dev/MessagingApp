@@ -1,0 +1,28 @@
+.searchResultOldFrame{
+    min-height: 16px;
+    max-height: 16px;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: gainsboro;
+
+    scrollbar-width: none;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    font-size: 14px;
+
+    margin-top: 10px;
+}
+.searchResultOldName{
+    margin-left: 5px;
+}
+
+@media (max-width: 500px)
+{
+    .searchResultOldFrame{
+        font-size: 10px;
+    }
+
+}

@@ -1,0 +1,32 @@
+.butbbleRightFrame{
+    margin-top: 3px;
+    margin-left: auto;
+    min-width: 70svw;
+    max-width: 70svw;
+}
+.bubbleRightTime
+{
+    width: fit-content;
+    height: fit-content;
+
+    font-size: 10px;
+
+    margin-left: auto;
+}
+.bubbleRightContent{
+    max-width: 68svw;
+    width: fit-content;
+    height: fit-content;
+    
+    background-color: slateblue;
+    
+    white-space: pre-line;
+    word-wrap: break-word;
+
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+    border-radius: 6px;
+
+    margin-left: auto;
+}

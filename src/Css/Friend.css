@@ -1,0 +1,131 @@
+.friendFrame{
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: aliceblue;
+
+    scrollbar-width: none;
+
+    display: flex;
+}
+.friendFrame:hover{
+    background-color: lightskyblue;
+
+}
+
+.friendIconA{
+    margin-top: 10px;
+    margin-left: 10px;
+
+    box-sizing: border-box;
+    border: solid 3px aliceblue;
+    border-radius: 50%;
+
+    min-height: 80px;
+    max-height: 80px;
+    min-width: 80px;
+    max-width: 80px;  
+}
+.friendIconB{
+    margin-top: 10px;
+    margin-left: 10px;
+
+    box-sizing: border-box;
+    border: solid 3px cornflowerblue;
+    border-radius: 50%;
+
+    min-height: 80px;
+    max-height: 80px;
+    min-width: 80px;
+    max-width: 80px;
+}
+.friendContent{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+    font-size: 12px;
+}
+.friendUtility{
+    margin-left: auto;
+
+    display: flex;
+    margin-right: 10px;
+
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 10px;
+
+}
+.friendUnfriendButton{
+    font-size: 10px;
+    color: red;
+    border: solid 1px red;
+    background-color: lightcoral;
+    border-radius: 2px;
+}
+.friendUnfriendButton:hover{
+    color: maroon;
+    border: solid 1px maroon;
+    background-color: lightcoral;
+
+}
+
+.frinedWrittenData{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1140px)
+{
+    /*make frame taller so image can stack ontop*/
+    .friendFrame{
+        min-height: 100px;
+        max-height: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .friendIconA,/*make image smaller*/
+    .friendIconB{
+        min-height: 60px;
+        max-height: 60px;
+        min-width: 60px;
+        max-width: 60px;
+    }
+    .frinedWrittenData{/*spread the name+message and sentDate+button to the sides of container*/
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .friendUtility,/*move the contents up closer to image*/
+    .friendContent{
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 950px)
+{
+    .friendFrame{/*make frame taller so image can stack ontop*/
+        min-height: 120px;
+        max-height: 120px;
+    }
+    .frinedWrittenData{/*stack all data in center*/
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .friendUtility,/*stack all data in center*/
+    .friendContent{
+        align-items: center;
+    }
+    .friendUtility{/*stack all data in center*/
+        margin-left: 0px;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0px;
+    }
+}

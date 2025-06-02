@@ -1,0 +1,73 @@
+.createPageFrame {
+  min-height: 100svh;
+  max-height: 100svh;
+  min-width: 100svw;
+  max-width: 100svw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: aliceblue;
+}
+.createPageHeading{
+  color: cornflowerblue;
+}
+.createPageImage{
+  height: 200px;
+  width: 200px; 
+  border-radius: 50%; 
+  border: solid 2px lightskyblue;
+}
+.createPageImage:hover{
+   border-color: cornflowerblue;
+}
+.createPageHoldInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.createPageInput{
+  margin-top: 2px;
+  border-style: solid;
+  border-color: lightskyblue;
+  border-radius: 4px;
+}
+.createPageInput:hover{
+  border-color: cornflowerblue;
+}
+.createPageHoldButton {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+.createPageButton {
+  width: 80px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-style: solid;
+  border-color: lightskyblue;
+  color: lightskyblue;
+  border-radius: 4px;
+  background-color: white;
+}
+.createPageButton:hover {
+  background-color: lightskyblue;
+  color: cornflowerblue;
+  border-color: cornflowerblue;
+
+}
+.createUserPageError {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  color:red;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+.searchPageFrame{
+    background-color: aliceblue;
+
+    min-height: 100svh;
+    max-height: 100svh;
+    min-width: 100svw;
+    max-width: 100svw;
+}
+
+.searchPageHeader {
+    min-height: 10svh;
+    max-height: 10svh;
+    min-width: 100svw;
+    max-width: 100svw;
+
+    background-color: lightskyblue;
+
+    box-sizing: border-box;
+    border: solid 2px cornflowerblue;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.searchPageButton{
+    min-height: 5svh;
+    max-height: 5svh;
+
+    border-style: solid;
+    border-color: cornflowerblue;
+    border-radius: 4px;
+    background-color: aliceblue;
+    color: cornflowerblue;
+
+    margin-left: 10px;
+}
+.searchPageButton:hover{
+    background-color: lightskyblue;
+}
+.searchPageContent{
+    min-height: 90svh;
+    max-height: 90svh;
+    min-width: 100svw;
+    max-width: 100svw;  
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.searchPageLabel{
+    min-width: 70svw;
+    max-width: 70svw;  
+
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+.searchPageHeading{
+    color: cornflowerblue;
+    font-weight: bold;
+}
+.searchPageInput{
+    flex-grow: 1;
+    border-color: cornflowerblue;
+}
+.searchPageInput:hover{
+    border-width: 3px;
+}
+.searchPageInput:focus {
+    border-color: cornflowerblue;
+}
+
+.searchPageResults{
+    min-height: 70svh;
+    max-height: 70svh;
+    min-width: 70svw;
+    max-width: 70svw;  
+
+    box-sizing: border-box;
+    border: solid 1px lightskyblue;
+
+    overflow: scroll;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.searchPageResults::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+@media (max-width: 600px)
+{
+    .searchPageResults,
+    .searchPageLabel{
+        min-width: 90svw;
+        max-width: 90svw;  
+    }
+}

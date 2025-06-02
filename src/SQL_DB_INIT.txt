@@ -1,0 +1,43 @@
+-- CREATE DATABASE p1;
+USE p1;
+
+-- Create all tables
+DROP TABLE Users;
+CREATE TABLE Users (
+    uId int NOT NULL AUTO_INCREMENT UNIQUE,
+    uName varchar(30) COLLATE latin1_general_cs NOT NULL UNIQUE,
+    uPass varchar(30) COLLATE latin1_general_cs NOT NULL,
+    uProfile varchar(35) COLLATE latin1_general_cs NOT NULL,
+
+    PRIMARY KEY (uId)
+);
+DROP TABLE Friendship;
+CREATE TABLE Friendship (
+    uId1 int NOT NULL,
+    uId2 int NOT NULL,
+    uName1 varchar(30) COLLATE latin1_general_cs NOT NULL,
+    uName2 varchar(30) COLLATE latin1_general_cs NOT NULL,
+    unfollowed varchar(30) COLLATE latin1_general_cs,
+
+    PRIMARY KEY (uName1, uName2)
+);
+DROP TABLE Request;
+CREATE TABLE Request (-- uId1 requests friendship with uId2
+    uId1 int NOT NULL,
+    uId2 int NOT NULL,
+    uName1 varchar(30) COLLATE latin1_general_cs NOT NULL,
+    uName2 varchar(30) COLLATE latin1_general_cs NOT NULL,
+
+    PRIMARY KEY (uName1, uName2)
+);
+DROP TABLE Chat;
+CREATE TABLE Chat(
+    chatId int NOT NULL AUTO_INCREMENT UNIQUE,
+    uId1 int NOT NULL,
+    uId2 int NOT NULL,
+    content varchar(1000) COLLATE latin1_general_cs NOT NULL,
+    sentAt DATETIME NOT NULL,
+    seen BOOLEAN,
+
+    PRIMARY KEY (chatId)
+);

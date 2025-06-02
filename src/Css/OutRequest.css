@@ -1,0 +1,62 @@
+.outRequestFrame{
+    min-height: 16px;
+    max-height: 16px;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: aliceblue;
+
+    scrollbar-width: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 12px;
+
+   margin-top: 10px;
+}
+.outRequestFrame:hover{
+    background-color: lightskyblue;
+}
+.outRequestName{
+    margin-left: 10px;
+}
+
+.outRequestUnfriendButton{
+    font-size: 10px;
+    color: red;
+    border: solid 1px red;
+    background-color: lightcoral;
+    border-radius: 2px;
+
+    margin-right: 10px;
+}
+.outRequestUnfriendButton:hover{
+    color: maroon;
+    border: solid 1px maroon;
+    background-color: lightcoral;
+
+}
+
+@media (max-width: 1140px)
+{
+    .outRequestFrame{/*make taller for stacking space*/
+        min-height: 50px;
+        max-height: 50px;
+
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    
+    
+    .outRequestName{/*name is now full width*/
+        min-width: 96%;
+        max-width: 96%;
+        margin-top: 0px;
+    }
+    .outRequestUnfriendButton{
+        margin-left: auto;
+    }
+
+}

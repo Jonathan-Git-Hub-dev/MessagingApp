@@ -1,0 +1,136 @@
+.chatPageFrame{
+    min-height: 100svh;
+    max-height: 100svh;
+    min-width: 100svw;
+    max-width: 100svw;
+    background-color: aliceblue;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.chatPageHeader{
+    min-height: 10svh;
+    max-height: 10svh;
+    min-width: 100svw;
+    max-width: 100svw;   
+
+    background-color: lightskyblue;
+
+    box-sizing: border-box;
+    border: solid 2px cornflowerblue;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
+}
+
+.chatPageButton{
+    min-height: 5svh;
+    max-height: 5svh;
+
+    border-style: solid;
+    border-color: cornflowerblue;
+    border-radius: 4px;
+    background-color: aliceblue;
+    color: cornflowerblue;
+
+}
+.chatPageButton:hover{
+    background-color: lightskyblue;
+}
+
+.chatPageInput{
+
+    min-width: 40svw;
+    max-width: 40svw;   
+
+    border: 1px solid black;
+    max-height: 180px;
+    overflow: auto;
+
+    background-color: aliceblue;
+    padding: 6px;
+}
+.ChatPageInput::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.chatPageTexts{
+    min-width: 90svw;
+    max-width: 90svw;   
+    flex-grow: 1;
+
+    max-height: 78svh;
+    overflow: auto;
+    -webkit-mask: linear-gradient(0deg,#0000,#000 2% 98%,#0000);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chatPageTexts::-webkit-scrollbar { 
+    display: none; 
+}
+
+.chatPageFooter{
+
+    background-color: lightskyblue;
+
+    min-height: 10svh;
+
+    min-width: 100svw;
+    max-width: 100svw;   
+
+    box-sizing: border-box;
+    border: solid 2px cornflowerblue;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    gap: 10px;
+}
+.chatPageGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatPageError{
+    min-height: 16px;
+    max-height: 16px;
+
+    font-size: 12px;
+    color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 600px)/*Names overflow so make smaller*/
+{
+    .chatPageHeader{
+        font-size: 10px;
+    }
+}
+@media (max-width: 420px)/*Names overflow so make smaller*/
+{
+    .chatPageHeader{
+        font-size: 8px;
+    }
+}

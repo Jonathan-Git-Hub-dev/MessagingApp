@@ -1,0 +1,86 @@
+.inRequestFrame{
+    min-height: 16px;
+    max-height: 16px;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: aliceblue;
+
+    scrollbar-width: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 12px;
+
+    margin-top: 10px;
+}
+.inRequestFrame:hover{
+    background-color: lightskyblue;
+}
+.inRequestName{
+   margin-left: 10px;
+   flex-shrink: 1;
+}
+.inRequestsButton
+{
+    padding: 0px;
+    margin-top: 0px;
+}
+.inRequestUnfriendButton1{
+    font-size: 10px;
+    color: green;
+    border: solid 1px green;
+    background-color: darkseagreen;
+    border-radius: 2px;
+
+    margin-right: 5px;
+}
+.inRequestUnfriendButton1:hover{
+    color: darkgreen;
+    border: solid 1px darkgreen;
+
+}
+.inRequestUnfriendButton2{
+    font-size: 10px;
+    color: red;
+    border: solid 1px red;
+    background-color: lightcoral;
+    border-radius: 2px;
+
+    margin-right: 10px;
+}
+.inRequestUnfriendButton2:hover{
+    color: maroon;
+    border: solid 1px maroon;
+
+}
+#inRequestB1{
+    margin-left: auto;
+}
+
+@media (max-width: 1140px)
+{
+    .inRequestFrame{/*make taller for stacking space*/
+        min-height: 50px;
+        max-height: 50px;
+
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 0px;
+    }
+    
+    
+    .inRequestName{/*name is now full width*/
+        min-width: 96%;
+        max-width: 96%;
+        margin-top: 0px;
+
+    }
+
+    .inRequestsButton{/*move buttons to the right*/
+        margin-top: 0px;
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,62 @@
+.blockedFrame{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 20px;
+    max-height: 20px;
+
+    font-size: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 5px;
+}
+.blockedFrame:hover{
+    background-color: lightskyblue;
+}
+.blockedName
+{
+    margin-left: 5px;
+}
+.blockedButton{
+    font-size: 10px;
+    color: green;
+    border: solid 1px green;
+    background-color: darkseagreen;
+    border-radius: 2px;
+
+    margin-right: 5px;
+}
+.blockedButton:hover{
+     color: darkgreen;
+    border: solid 1px darkgreen;
+
+}
+
+@media (max-width: 480px)
+{
+    /*stack name and button because name is too long*/
+    .blockedFrame{/*make taller for stacking space*/
+        min-height: 45px;
+        max-height: 45px;
+
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 0px;
+    }
+    
+    
+    .blockedName{/*name is now full width*/
+        min-width: 96%;
+        max-width: 96%;
+        margin-top: 0px;
+
+    }
+
+    .blockedButton{/*move buttons to the right*/
+        margin-top: 0px;
+        margin-left: auto;
+    }
+}

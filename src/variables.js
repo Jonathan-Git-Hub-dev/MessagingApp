@@ -1,0 +1,1 @@
+export const Url = 'http://localhost/React/git/MessagingApp/php/';
